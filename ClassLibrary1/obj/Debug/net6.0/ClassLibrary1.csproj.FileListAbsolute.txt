@@ -1,0 +1,11 @@
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.deps.json
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.dll
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\bin\Debug\net6.0\ClassLibrary1.pdb
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.AssemblyInfoInputs.cache
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.AssemblyInfo.cs
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.dll
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\refint\ClassLibrary1.dll
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ClassLibrary1.pdb
+C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\ClassLibrary1\obj\Debug\net6.0\ref\ClassLibrary1.dll

@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Gestion Ecole" Class="DonnéeEcoleDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\sqlexpress;Initial Catalog=&quot;Gestion Ecole&quot;;Persist Security Info=True;User ID=admin" SettingsObjectName="Quitaye_School.Properties.Settings" SettingsPropertyName="Gestion_EcoleConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.tbl_formule_inscription" Member="tbl_formule_inscription">
+    <Type Name="tbl_formule_inscription">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Formule" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Montant" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Gratuit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Compte" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_année_scolaire" Member="tbl_année_scolaire">
+    <Type Name="tbl_année_scolaire">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_entreprise" Member="tbl_entreprise">
+    <Type Name="tbl_entreprise">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Téléphone" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Pays" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Ville" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Secteur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Type_Produit" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Slogan" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Couleur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_examen" Member="tbl_examen">
+    <Type Name="tbl_examen">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Enregistrement" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_enseignant" Member="tbl_enseignant">
+    <Type Name="tbl_enseignant">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom_Complet" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Date_Naissance" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Nationalité" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Active" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_note" Member="tbl_note">
+    <Type Name="tbl_note">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Note_Classe" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Note_Compo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Coeff" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Matière" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Examen" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="N_Matricule" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Date_Enregistrement" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Enseignant" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_matiere" Member="tbl_matiere">
+    <Type Name="tbl_matiere">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Matière_Crutiale" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Enregistrement" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Coefficient" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Enseignant" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_client_quitaye" Member="tbl_client_quitaye">
+    <Type Name="tbl_client_quitaye">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Entreprise" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Ville" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pays" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Slogan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InstanceDb" Type="System.String" DbType="NVarChar(350)" CanBeNull="true" />
+      <Column Name="InstanceUser" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InstancePswd" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Inscription" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date_Expiration" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Type_Entreprise" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Logiciel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Type_Abonnement" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Referant" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Last_Login" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_instances" Member="tbl_instances">
+    <Type Name="tbl_instances">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Instance" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[User]" Member="User" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nombre_Db" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_feedback" Member="tbl_feedback">
+    <Type Name="tbl_feedback">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Entreprise" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Email_Entreprise" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Utilisateur" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Commentaire" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Logiciel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_journal_comptable" Member="tbl_journal_comptable">
+    <Type Name="tbl_journal_comptable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Date_Enregistrement" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Libelle" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="N_Facture" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Compte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Compte_Tier" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Débit" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Crédit" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Ref_Pièces" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Commentaire" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Nom_Fichier" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Fichier" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ref_Payement" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Active" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Validé" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_list_journaux" Member="tbl_list_journaux">
+    <Type Name="tbl_list_journaux">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Prefix" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Compte" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Compte_Comptable" Member="tbl_Compte_Comptable">
+    <Type Name="tbl_Compte_Comptable">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Compte" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Catégorie" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Nom_Compte" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Compte_Aux" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Préfix" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_Users" Member="tbl_Users">
+    <Type Name="tbl_Users">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Type_Compte" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Role" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Departement" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Premier_Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Second_Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Lycée" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Université" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Cente_Loisir" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Crèche" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Auth_Maternelle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_payement" Member="tbl_payements">
+    <Type Name="tbl_payement">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="N_Matricule" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Montant" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Date_Payement" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Date_Enregistrement" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Commentaire" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fichier" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nom_Fichier" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Tranche1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tranche2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tranche3" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Opération" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_responsabilité" Member="tbl_responsabilités">
+    <Type Name="tbl_responsabilité">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Responsabilité" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_parent_elèves" Member="tbl_parent_elèves">
+    <Type Name="tbl_parent_elève">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Pays" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Ville" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Nom_Contact" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_tarif_accessoire" Member="tbl_tarif_accessoires">
+    <Type Name="tbl_tarif_accessoire">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Tarif_Annuel" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tarif_Mensuel" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tarif_Journalier" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_inscription" Member="tbl_inscriptions">
+    <Type Name="tbl_inscription">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Prenom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom_Complet" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Nom_Matricule" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Date_Naissance" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Type_Scolarité" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nom_Père" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Nom_Mère" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="[Contact 1]" Member="Contact_1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Contact 2]" Member="Contact_2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Nationalité" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cantine" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Transport" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Assurance" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="N_Matricule" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Date_Inscription" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ref_Pièces" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Scolarité" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Motif_Desactivation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Desactivation" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_notifier_absence" Member="tbl_notifier_absences">
+    <Type Name="tbl_notifier_absence">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Personne" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="N_Matricule" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Date_Absence" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Fichier" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Nom_Fichier" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Commentaire" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_staff" Member="tbl_staffs">
+    <Type Name="tbl_staff">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Adresse" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Role" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Contact" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Date_Ajout" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Salaire" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_historiqueeffectif" Member="tbl_historiqueeffectif">
+    <Type Name="tbl_historiqueeffectif">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nom_Matricule" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Genre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Type_Scolarité" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nationalité" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NewAnnée_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cantine" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Transport" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Assurance" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="N_Matricule" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Date_Inscription" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Image" Type="System.Data.Linq.Binary" DbType="VarBinary(MAX)" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="Ref_Pièces" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Active" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Scolarité" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tranche1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tranche2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Tranche3" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_scolarité" Member="tbl_scolarité">
+    <Type Name="tbl_scolarité">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Année_Scolaire" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Classe" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Montant" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Tranche 1]" Member="Tranche_1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="[Tranche 2]" Member="Tranche_2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="[Tranche 3]" Member="Tranche_3" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.tbl_classe" Member="tbl_classe">
+    <Type Name="tbl_classe">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nom" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Scolarité" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auteur" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Cycle" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="[Tranche 1]" Member="Tranche_1" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="[Tranche 2]" Member="Tranche_2" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="[Tranche 3]" Member="Tranche_3" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Classe_Sup_Id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

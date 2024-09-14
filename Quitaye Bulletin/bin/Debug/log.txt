@@ -1,0 +1,145 @@
+
+[12:05:14 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData() dans C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\Quitaye Bulletin\User Interface\Détails_Elèves.cs:ligne 710
+-----------------------
+
+[12:06:47 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData() dans C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\Quitaye Bulletin\User Interface\Détails_Elèves.cs:ligne 710
+-----------------------
+
+[12:08:17 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData() dans C:\Repos\Nouveau dossier\Nouveau dossier\Quitaye-Bulletin\Quitaye Bulletin\User Interface\Détails_Elèves.cs:ligne 710
+-----------------------
+
+[12:25:25 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:25:34 Friday, September 13, 2024]	 LINQ to Entities ne reconnaît pas la méthode 'Quitaye_Bulletin.Models.Context.tbl_scolarité LastOrDefault[tbl_scolarité](System.Linq.IQueryable`1[Quitaye_Bulletin.Models.Context.tbl_scolarité])', et cette dernière ne peut pas être traduite en expression de magasin.-   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   à System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   à System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   à System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   à System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   à System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.LastOrDefault[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:26:50 Friday, September 13, 2024]	 LINQ to Entities ne reconnaît pas la méthode 'Quitaye_Bulletin.Models.Context.tbl_scolarité LastOrDefault[tbl_scolarité](System.Linq.IQueryable`1[Quitaye_Bulletin.Models.Context.tbl_scolarité])', et cette dernière ne peut pas être traduite en expression de magasin.-   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   à System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   à System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   à System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   à System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   à System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   à System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   à System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__3[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.LastOrDefault[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:27:51 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:28:21 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:34:56 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:35:12 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[12:38:33 Friday, September 13, 2024]	 La valeur ne peut pas être null.
+Nom du paramètre : source-   à System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   à System.Linq.Enumerable.Sum[TSource](IEnumerable`1 source, Func`2 selector)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[15:25:48 Friday, September 13, 2024]	 La référence d'objet n'est pas définie à une instance d'un objet.-   à Quitaye_Bulletin.User_Interface.Détails_Elèves.UpdateResteForNoPayment(tbl_inscription inscription, tbl_scolarité scolarite, Decimal montantScolarite)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.UpdateScolariteUI(tbl_inscription inscription, tbl_scolarité scolarite, IQueryable`1 payement, Decimal montantScolarite)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[15:42:00 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
+
+[15:44:23 Friday, September 13, 2024]	 La séquence ne contient aucun élément.-   à System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   à System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   à System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   à System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   à Quitaye_Bulletin.User_Interface.Détails_Elèves.FillData()
+-----------------------
